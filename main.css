@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.page{
+    width: 300%;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    background-color: gray;
+ 
+}
+
+/* .heroimage{
+    width: 100vw;
+    height: 60vh;
+    margin: 0 0 0 auto;
+    background: url(./img/1_Kt6I23cPlIIOy9ul79CT1g@2x.jpeg) no-repeat;
+    background-size: 100vw 60vh;
+
+} */
+
+.heroimage#fox{
+    width: 100vw;
+    height: 400px;
+    margin: 0;
+    background: url(./img/peter-neumann-3Z0ev9DqwsY-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.heroimage#sealion {
+    width: 100vw;
+    height: 400px;
+    margin: 0;
+    background: url(./img/jennett-bremer-n4jz-Ko6o4w-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.heroimage#whale {
+    width: 100vw;
+    height: 400px;
+    margin: 0;
+    background: url(./img/javier-mazzeo-GTXvpZ2eTdA-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.heroimage:hover{
+    /* width: 100vw;
+    height: 400px;
+    margin: 0 0 0 auto;
+    background: url(./img/foxfox.png) no-repeat;
+    background-size: cover;
+
+    transform: translate(calc(-100% - 12rem)) scale(1.0);
+    transition: transform 1.5s linear;
+    background-position: center center; */
+}
+
+.heroimage.next:hover{
+    /* width: 100vw;
+    height: 400px;
+    margin: 0 0 0 auto;
+    background: url(./img/foxfox.png) no-repeat;
+    background-size: cover;
+
+    transform: translate(calc(-100% - 12rem)) scale(1.0);
+    transition: transform 1.5s linear;
+    background-position: center center; */
+}
+
+@keyframes shift{
+    0% {left:0px; top:0px;}
+    100% {left:-100vw; top:0px;}
+}
+
+.buttons button{
+    border: none;
+    outline: none;
+}
+
+.buttons button.prev{
+   background-color: transparent;
+   position: absolute;
+   top: 30%;
+   left: 15px;
+}
+
+.buttons button.next{
+    background-color: transparent;
+    position: absolute;
+    top: 30%;
+    right: 15px;
+ }
+
+ i.fal:hover {
+    background-color: transparent;
+    background-color: #333;
+    border-radius: 20px;
+  }
+
+i {
+    font-size: 30px;
+}
+
+i.fal{
+    color: white;
+}
